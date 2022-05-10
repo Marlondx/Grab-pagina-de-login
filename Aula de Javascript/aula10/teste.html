@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculo">
+        <H1>Aqui vamos fazer um calculo</H1>
+        <input type="number" name="" id="numero01"> <samp>+</samp>
+        <input type="number" name="" id="numero02">
+        <input type="button" value="Somar" onclick="Somar()" > <!--criando a açao-->
+            <div id="resultado">
+              <h2>Resultado</h2>
+             </div>
+         <script>
+          
+             function Somar(){ 
+             var nume = document.getElementById('numero01')
+             var nume2 = document.getElementById ('numero02')
+             var res = document.getElementById('resultado')
+             var n1 = Number (nume.value)
+             var n1 = Number (nume2.value) 
+             var soma = n1 + n2 
+             
+                 res.innerHTML = `a soma e ${soma}`
+             }
+             
+         </script>
+     </div>
+</body>
+</html>

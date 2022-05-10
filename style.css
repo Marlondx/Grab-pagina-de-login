@@ -1,0 +1,199 @@
+/* parte completa */
+body{
+    background-color: #4f5bef;
+    color: #f4f5fe;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/*cima do site */
+
+.cima{
+ 
+  text-align: center;
+  margin-top: 4%;
+  position: absolute;
+  margin-left: 2%;
+   
+}
+.cima img{
+    width: 32%;
+    margin-bottom: -1%;
+    margin-left: -30%;
+   
+}
+@media (max-width: 1400px) {
+    .cima img{
+       
+        width: 25%;
+        margin-left: -34%;
+    }
+
+}
+/* lado esquerdo */
+
+
+.esq{
+    
+    float: left;
+   
+    margin:19% 0 0  10%;
+
+    
+    
+}
+
+.esq input{
+    width: 60%;
+    padding: 10px;
+    height: 30px;
+    border-radius: 50px;
+    background-color:#4f5bef;
+    border-color: rgb(255, 255, 255);
+    border-style:double ;
+    padding-left: 40px;
+    position: relative;
+    color: white;
+   /* background-image: url(img/senha.svg);
+    background-repeat: no-repeat;
+    background-position:10px ;*/
+   
+ }   
+ 
+ 
+
+.esq input:invalid {
+    border-color:red;
+   
+   
+
+    
+}
+
+.esq span{
+    position: absolute;
+    margin-left: -20%;
+    margin-top: 1%;
+
+}
+.esq i{
+    position: absolute;
+        margin-top: 1%;
+        margin-left: -20%;
+}
+input#log{
+    margin-bottom: 3%;
+}
+
+.bu{
+    display: flex;
+    margin-top: 3%;
+    border-color: white;
+    width: 72%;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.bu samp{
+    margin: auto;
+    color: #3d3d3d;
+}
+
+@media (max-width:1360px) {
+    .esq{
+        display: flex;
+        flex-direction: column;
+        margin-top: 18%;
+        
+        
+    }
+    .esq input{
+        width: 115%;
+        height: 27px;
+        margin-left: -1%;
+    }
+    .bu{
+        margin-left: -1%;
+        width: 140%;
+        
+    }
+    .esq span{
+        
+        
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 1%;
+    
+    } 
+    .esq i{
+        position: absolute;
+        margin-top: 5.4%;
+        margin-left: 1%;
+    }
+    
+ }
+/* lado direito */
+.dir{
+   float: right;
+   background-color: #F8F8F8;
+   margin-right: -1%;
+   margin-top: -1%
+   
+}
+.primeiro{
+    height: 900px;
+    width: 900px;
+  
+   display: flex;
+  
+}
+
+
+.segunda{
+    
+    
+    position: absolute;
+    margin-top: -50% ;
+
+}
+.segunda img{
+    width: 115%;
+    margin-top: -10%;
+    margin-left: -28%;
+}
+
+@media (max-width: 1360px) {
+    .primeiro{
+        width: 700px;
+    }
+   
+    .segunda img{
+     width: 120%;
+     margin:-32%  0 0 -32%;
+    
+     
+          
+    }
+ }
+ 
+/* parte de baixo */ 
+
+.baixo{
+   position: fixed;
+   bottom: 5%;
+   font-size: 14pt;
+   margin-left:14%;
+   text-align: center;
+
+   
+}
+.baixo a{
+    color: white;
+    text-decoration: none;
+   
+}
+.baixo a:hover{
+    color: tomato;
+}
+
+

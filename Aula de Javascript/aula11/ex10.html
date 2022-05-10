@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+
+<body>
+    <h1>Detran</h1>
+    <input type="number" name="" id="velo"> km/h
+    <input type="button" value="calcula sua velucidade" onclick="calcula ()">
+    <div class="Resu">
+        <h2>
+            Resultado
+        </h2>
+    </div>
+
+    <script>
+        function calcula() {
+            var veloz = document.getElementById('velo')
+            var Resultado = document.querySelector('div.Resu')
+            var vel = Number(veloz.value)
+
+            Resultado.innerHTML = `<p> A sua velucidade e <strong>${vel}Km/h</strong></p> ` 
+            if (vel > 80) {
+                Resultado.innerHTML +=` <p>Voce ultrapaçao o limid de <strong> 80 km/h </strong> e foi multado em 200R$</p> `
+            }
+          
+            Resultado.innerHTML += '<p> Nao esqueça Utilize o cintu! sua seguraça e importade </p>'
+
+        }
+    </script>
+
+
+</body>
+
+</html>
